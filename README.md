@@ -17,5 +17,5 @@ INSTALLATION
 
 Screenshots:
 ![alt tag](http://i.imgur.com/CXLYRyL.png)
-![alt tag](http://i.imgur.com/T1sLp4J.png)
+![alt tag](http://i.imgur.com/JQzwhgt.png)
 ![alt tag](http://i.imgur.com/T1sLp4J.png)
