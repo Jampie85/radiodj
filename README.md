@@ -4,6 +4,7 @@ RadioDJ php web for http://www.radiodj.ro
 Simple RadioDJ php web
 
 INSTALLATION
+
 1. Place the Plugin_Requests.dll file in the plugin folder within RadioDJ. (This file can be found in the disabled plugins folder)
 
 2. Open “inc/config.php” and enter your Database and MySQL server details;
