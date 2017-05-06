@@ -64,7 +64,7 @@ foreach($alphabetic as $row) {
 <?php
 //pagination
 $page = (int) (!isset($_GET["page"]) ? 1 : $_GET["page"]);
-$limit = 60;
+$limit = 100;
 $startpoint = ($page * $limit) - $limit;
 //query
 $nextquery = db_select("SELECT * FROM songs WHERE `enabled`='1' $srcquery AND `song_type`=0 LIMIT {$startpoint}, {$limit}");
@@ -75,7 +75,7 @@ if($nextquery) {
 	foreach($nextquery as $row) {
 		echo "<tr>    
 			  <td><a href=\"#\" onclick=\"openDialog('Song Info','request.php?song=".$row['ID']."&req=off', 'Song Info');return false;\">".utf8_encode($row['artist'])." - ".utf8_encode($row['title'])."</a></td>
-			   <td><a href=\"#\" onclick=\"openDialog('Request','request.php?song=".$row['ID']."', 'Request');return false;\">Request</a></td>
+			   <td><a href=\"\" onclick=\"openDialog('Request','request.php?song=".$row['ID']."', 'Request');return false;\">Request</a></td>
 			  <td>".convertTime($row['duration'])."</td>
 			  </tr>";
 	}
